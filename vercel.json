@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.py", "use": "@vercel/python" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/api/index.py" },
+    { "src": "/api", "dest": "/api/index.py" },
+    { "src": "/api/wiki", "dest": "/api/wiki.py" },
+    { "src": "/api/ddg", "dest": "/api/ddg.py" },
+    { "src": "/api/books", "dest": "/api/books.py" },
+    { "src": "/api/github", "dest": "/api/github.py" },
+    { "src": "/api/stack", "dest": "/api/stack.py" }
+  ]
+}
